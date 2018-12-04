@@ -15,6 +15,8 @@ function myQuiz() {
         right = right + 20;
     };
 
-    alert(right);
+    document.getElementById("displayResults").style.visibility = "visible";
+    document.getElementById("score").innerHTML = "HERE IS YOUR SCORE: " + right + "%";
+    $(".container").fadeOut();
 
 };
