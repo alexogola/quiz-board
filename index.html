@@ -16,31 +16,30 @@
         <h3 class="quiz-board-title">Quiz Board</h3>
         <div class="quiz-board">
 
-        <form method="post" action="" enctype="text/plain">
+        <form id="javascriptQuiz" name="javascriptQuiz" method="post" action="index.html">
 
           <P>What is the shortform of HTML</br>
-            <input type="radio" name="What is the shortform of HTML" value="html">HTML</br>
-            <input type="radio" name="What is the shortform of HTML" value="hmlt">HMLT</br>
-            <input type="radio" name="What is the shortform of HTML" value="tmlh">TMLH</br>
-            <input type="radio" name="What is the shortform of HTML" value="mlth">MLTH</br>
+            <input type="radio" name="questionOne" value="right">HTML</br>
+            <input type="radio" name="questionOne" value="wrong">HMLT</br>
+            <input type="radio" name="questionOne" value="wrong">TMLH</br>
+            <input type="radio" name="questionOne" value="wrong">MLTH</br>
           </p>
 
           <P>What is the other name for Javascript</br>
-            <input type="radio" name="What is the other name for Javascript" value="ecmascript">ECMAscript</br>
-            <input type="radio" name="What is the other name for Javascript" value="js">JS</br>
-            <input type="radio" name="What is the other name for Javascript" value="bootstrap">Bootstrap</br>
-            <input type="radio" name="What is the other name for Javascript" value="jquery">Jquery</br>
+            <input type="radio" name="questionTwo" value="right">ECMAscript</br>
+            <input type="radio" name="questionTwo" value="wrong">JS</br>
+            <input type="radio" name="questionTwo" value="wrong">Bootstrap</br>
+            <input type="radio" name="questionTwo" value="wrong">Jquery</br>
           </p>
 
           <P>Is C++ a low level language</br>
-            <input type="radio" name="Is C++ a low level language" value="yes">Yes</br>
-            <input type="radio" name="Is C++ a low level language" value="no">No</br>
-            <input type="radio" name="Is C++ a low level language" value="maybe">Maybe</br>
-            <input type="radio" name="Is C++ a low level language" value="i dont know">I dont know</br>
+            <input type="radio" name="questionThree" value="wrong">Yes</br>
+            <input type="radio" name="questionThree" value="right">No</br>
+            <input type="radio" name="questionThree" value="wrong">Maybe</br>
+            <input type="radio" name="questionThree" value="wrong">I dont know</br>
           </p>
 
-          <input class="button" type="submit" value="Send Form">
-          <input class="button" type="reset" value="Clear Form">
+          <input class="button" type="submit" value="Submit" onClick="myQuiz();">
         </form>
         </div>
 
@@ -49,6 +48,9 @@
     </div>
 
   </div>
+  <div id="fifth-p">
+        <p id="correctNumber">HERE IS YOUR SCORE:</p>
+    </div>
 
   <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>

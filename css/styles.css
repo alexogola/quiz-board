@@ -28,3 +28,13 @@
   text-align: center;
   padding-top: 10px;
 }
+
+#fifth-p {
+    visibility: hidden;
+    height:300px;
+}
+#fifth-p p{
+    text-align: center;
+    transform: translate(0%,190%);
+    font-size: 40px;
+}
