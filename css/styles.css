@@ -16,3 +16,15 @@
     background-color: #228B22; /* Dark Green */
     color: white;
 }
+
+.quiz-board {
+    padding: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.quiz-board-title{
+  text-align: center;
+  padding-top: 10px;
+}
