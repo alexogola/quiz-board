@@ -31,13 +31,10 @@
   text-align: center;
   padding-top: 10px;
 }
-#displayResults {
-    visibility: hidden;
-    background-color: burlywood;
-    height:300px;
-}
-#displayResults p{
-    text-align: center;
-    transform: translate(0%,190%);
-    font-size: 40px;
+.display-results {
+  padding: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  text-align: center;
 }

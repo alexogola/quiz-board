@@ -35,6 +35,7 @@ $(document).ready(function(){
         $("input[type=radio][name=answerTwo]:checked").prop('checked', false);
         $("input[type=radio][name=answerThree]:checked").prop('checked', false);
         $('#unattemptedQuestions').text('');
+        $(".quiz-board").fadeOut();
         $('#display-results').text(total(score));
 }
           event.preventDefault();
