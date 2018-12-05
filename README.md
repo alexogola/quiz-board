@@ -1,6 +1,6 @@
 # QUIZ BOARD
 
- This project is a web page displaying a triangle tracker.
+ This project is a web page displaying a quiz board.
 
 ## Author name
 
