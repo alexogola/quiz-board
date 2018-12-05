@@ -44,4 +44,6 @@
 #retake {
   visibility: hidden;
   text-align: center;
+  padding: 40px;
 }
+#retake a:hover{ text-decoration: none;}
