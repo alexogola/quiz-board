@@ -18,7 +18,7 @@
         <h3 class="quiz-board-title">Quiz Board</h3>
         <div class="quiz-board">
 
-          <form id="javascriptQuiz" name="javascriptQuiz" method="post" action="index.html" onsubmit="return myQuiz();">
+          <form id="javascriptQuiz" name="javascriptQuiz" method="post" action="index.html">
 
             <P>What is the shortform of HTML</br>
               <input type="radio" name="questionOne" value="right">HTML</br>
@@ -41,7 +41,7 @@
               <input type="radio" name="questionThree" value="wrong">I dont know</br>
             </p>
 
-            <input class="button" type="submit" value="Submit">
+            <input class="button" type="submit" value="Submit" onClick="myQuiz();">
           </form>
         </div>
 
