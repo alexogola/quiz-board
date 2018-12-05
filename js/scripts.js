@@ -1,22 +1,42 @@
-function myQuiz() {
-    var questionOne = document.javascriptQuiz.questionOne.value;
-    var questionTwo = document.javascriptQuiz.questionTwo.value;
-    var questionThree = document.javascriptQuiz.questionThree.value;
-    var right = 0;
+var answers = ["right","right","right"];
+var awardedPoints = 20;
 
 
-    if (questionOne == "right") {
-        right = right + 20;
-    };
-    if (questionTwo == "right") {
-        right = right + 20;
-    };
-    if (questionThree == "right") {
-        right = right + 20;
-    };
+function total(score) {
+return "Your score is " + score;
+}
 
-    document.getElementById("displayResults").style.visibility = "visible";
-    document.getElementById("score").innerHTML = "HERE IS YOUR SCORE: " + right + "%";
-    $(".container").fadeOut();
+$(document).ready(function(){
+   $("#javascript-quiz").submit(function (event) {
 
-};
+
+      $('#display-results').text('');
+      var score = 0;
+      var answerOne = ($("input[type=radio][name=answerOne]:checked").val());
+      var answerTwo = ($("input[type=radio][name=answerTwo]:checked").val());
+      var answerThree = ($("input[type=radio][name=answerThree]:checked").val());
+
+      if (answerOne === undefined || answerTwo === undefined || answerThree === undefined) {
+  $('#unattemptedQuestions').text('Please attempt all questions.');
+  $('#unattemptedQuestions').fadeOut(10000);
+} else {
+         if (answerOne === answers[0]) {
+    score += awardedPoints;
+  }
+         if (answerTwo === answers[1]) {
+    score += awardedPoints;
+  }
+         if (answerThree === answers[2]) {
+    score += awardedPoints;
+  }
+
+
+        $("input[type=radio][name=answerOne]:checked").prop('checked', false);
+        $("input[type=radio][name=answerTwo]:checked").prop('checked', false);
+        $("input[type=radio][name=answerThree]:checked").prop('checked', false);
+        $('#unattemptedQuestions').text('');
+        $('#display-results').text(total(score));
+}
+          event.preventDefault();
+ });
+});
