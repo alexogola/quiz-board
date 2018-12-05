@@ -37,6 +37,8 @@ $(document).ready(function(){
         $('#unattemptedQuestions').text('');
         $(".quiz-board").fadeOut();
         $('#display-results').text(total(score));
+        document.getElementById("display-results").style.visibility = "visible";
+        document.getElementById("retake").style.visibility = "visible";
 }
           event.preventDefault();
  });
