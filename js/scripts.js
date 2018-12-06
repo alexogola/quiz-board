@@ -1,4 +1,4 @@
-var answers = ["right", "right", "right", "right", "right"];
+var answers = ["Brendan Eich", "ECMAScript", "Lower camelcase", "String", "1995"];
 var awardedPoints = 20;
 
 
