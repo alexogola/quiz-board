@@ -37,10 +37,10 @@ Target Audience-Everyone.
 | Behaviour   |      Input     |  Output |
 |----------|:-------------:|------:|
 | User answers all questions wrong | 0,0,0,0,0 |    your score is 0 |
-| User answers 1 question correct | 20,0,0 |    your score is 20 |
-| User answers 2 questions correct | 20,20,0 |  your score is 40 |
-| User answers 3 questions correct | 20,20,20 |  your score is 60 |
-| User answers 4 questions correct | 20,20,20,20 |  your score is 80 |
+| User answers 1 question correct | 20,0,0,0,0 |    your score is 20 |
+| User answers 2 questions correct | 20,20,0,0,0 |  your score is 40 |
+| User answers 3 questions correct | 20,20,20,0,0 |  your score is 60 |
+| User answers 4 questions correct | 20,20,20,20,0 |  your score is 80 |
 | User answers 5 questions correct | 20,20,20,20,20 |  your score is 100 |
 | If the user does not answer a question, the form does not submit | Null | Please attempt all questions |
 
