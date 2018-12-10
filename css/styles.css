@@ -1,5 +1,9 @@
+.bgimg {
+  background-color: #f2f2f2;
+}
 .jumbotron {
   background-color: #4CAF50;
+  margin-top: 40px;
 }
 
 .button {
@@ -39,7 +43,7 @@
   text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
     0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
     0 0 40px #A5F1FF;
-  font-size: 38px;
+  font-size: 33px;
 }
 
 .display-results {
